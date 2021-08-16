@@ -30,4 +30,28 @@ typedef struct playerMain {
 /* 0x2F */ char unk_2F;
 } playerMain; //sizeof 0x30
 
-//800F65E0 maybe starts conversational area?
+typedef struct spaceData {
+/* 0x00 */ s8 active; //is space invisible or visible?
+/* 0x01 */ u8 type; //blue space, red space, etc.
+/* 0x02 */ char unk_02[2];
+/* 0x04 */ f32 xPos;
+/* 0x08 */ f32 yPos;
+/* 0x0C */ f32 zPos;
+/* 0x10 */ f32 width;
+/* 0x14 */ f32 depth;
+/* 0x18 */ f32 height;
+/* 0x1C */ void* unk_1C;
+} spaceData; //sizeof 0x20
+
+enum spaces {
+	NONE,
+	BLUE_SPACE,
+	RED_SPACE,
+	MINIGAME_SPACE,
+	HAPPENING_SPACE,
+	STAR_SPACE,
+	CHANCE_SPACE,
+	UNK07_SPACE,
+	MUSHROOM_SPACE,
+	BOWSER_SPACE,
+}
