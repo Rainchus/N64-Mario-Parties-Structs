@@ -29,7 +29,7 @@ typedef struct playerMain {
 /* 0x2E */ u8 bowserSpacesTotal;
 /* 0x2F */ char unk_2F;
 } playerMain; //sizeof 0x30
-//P1 800F32B0, P1 800F32E0, P1 800F3310, P1 800F3340
+//P1 800F32B0, P2 800F32E0, P3 800F3310, P4 800F3340
 
 typedef struct playerOBJ {
 /* 0x00 */ char unk_04[4];
