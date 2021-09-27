@@ -36,7 +36,7 @@ typedef struct playerMain {
 /* 0x31 */ s8 battleSpacesLandedOn;
 /* 0x32 */ s8 itemSpacesLandedOn;
 /* 0x33 */ s8 bankSpacesLandedOn;
-/* 0x34 */ s8 bankSpacesLandedOn;
+/* 0x34 */ s8 gameGuySpacesLandedOn;
 /* 0x35 */ char unk_35[3]; //likely padding
 } playerMain; //sizeof 0x38
 //P1 = 0x800D1108
