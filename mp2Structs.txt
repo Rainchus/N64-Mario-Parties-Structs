@@ -1,10 +1,10 @@
 typedef struct {
 /* 0x00 */ char unk_00; //unused?
-/* 0x01 */ cpu_difficulty;
-/* 0x02 */ cpu_difficulty2; //copied from 0x01 for some reason..?
-/* 0x03 */ controller_port;
+/* 0x01 */ u8 cpu_difficulty;
+/* 0x02 */ u8 cpu_difficulty2; //copied from 0x01 for some reason..?
+/* 0x03 */ u8 controller_port;
 /* 0x04 */ u8 characterID;
-/* 0x05 */ char padding_05
+/* 0x05 */ char padding_05;
 /* 0x06 */ s16 flags;
 /* 0x08 */ s16 coins;
 /* 0x0A */ s16 extra_coins_collected_during_minigame;
