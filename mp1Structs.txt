@@ -1,3 +1,23 @@
+typedef struct playerOBJ {
+/* 0x00 */ char unk_04[4];
+/* 0x04 */ void* unk_04;
+/* 0x08 */ char unk_08;
+/* 0x0C */ f32 xPos;
+/* 0x10 */ f32 yPos;
+/* 0x14 */ f32 zPos;
+/* 0x18 */ f32 rotation;
+/* 0x1C */ f32 unk_1C;
+/* 0x20 */ f32 unk_20;
+/* 0x24 */ f32 width;
+/* 0x28 */ f32 height;
+/* 0x2C */ f32 depth;
+/* 0x30 */ f32 yPosOffset;
+/* 0x34 */ char unk_34[4];
+/* 0x38 */ f32 setPlayerJump; //changing to positive makes player yPos increase
+/* 0x3C */ void* unk_3C;
+/* 0x40 */ void* unk_40;
+} playerOBJ; //sizeof 0x44
+
 typedef struct playerMain {
 /* 0x00 */ char unk_00;
 /* 0x01 */ u8 cpuDifficulty;
@@ -30,26 +50,6 @@ typedef struct playerMain {
 /* 0x2F */ char unk_2F;
 } playerMain; //sizeof 0x30
 //P1 800F32B0, P2 800F32E0, P3 800F3310, P4 800F3340
-
-typedef struct playerOBJ {
-/* 0x00 */ char unk_04[4];
-/* 0x04 */ void* unk_04;
-/* 0x08 */ char unk_08;
-/* 0x0C */ f32 xPos;
-/* 0x10 */ f32 yPos;
-/* 0x14 */ f32 zPos;
-/* 0x18 */ f32 rotation;
-/* 0x1C */ f32 unk_1C;
-/* 0x20 */ f32 unk_20;
-/* 0x24 */ f32 width;
-/* 0x28 */ f32 height;
-/* 0x2C */ f32 depth;
-/* 0x30 */ f32 yPosOffset;
-/* 0x34 */ char unk_34[4];
-/* 0x38 */ f32 setPlayerJump; //changing to positive makes player yPos increase
-/* 0x3C */ void* unk_3C;
-/* 0x40 */ void* unk_40;
-} playerOBJ; //sizeof 0x44
 
 typedef struct spaceData {
 /* 0x00 */ s8 active; //is space invisible or visible?
